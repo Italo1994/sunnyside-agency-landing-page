@@ -4,13 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { AreaCoverComponent } from './area-cover/area-cover.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    AreaCoverComponent
+    CategoriesComponent,
   ],
   imports: [
     BrowserModule,
