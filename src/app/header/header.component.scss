@@ -1,0 +1,64 @@
+@import "../../styles.scss";
+
+a {
+    text-decoration: none;
+    color: $white;
+    font-size: 15px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.main-nav {
+    width: 100%;
+    height: 80px;
+    background-color: $main_bg_color;
+    padding: 0 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.area-brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.brand {
+    text-decoration: none;
+    color: $white;
+    font-weight: 800;
+    font-size: 34px;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 500;
+    height: 100%;
+}
+
+.area-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.link-menu {
+    display: inline-block;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-contact {
+    background-color: $white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Frauces', serif;
+    font-weight: 900;
+    font-size: 14px;
+}
