@@ -1,0 +1,78 @@
+@import "../../styles.scss";
+
+$default_width: 1100px;
+
+#testimonials {
+    width: 100%;
+    padding-top: 50px;
+    font-size: $minimal_size;
+    padding-bottom: 80px;
+    overflow-x: hidden;
+
+}
+
+.area-text {
+    width: $max_width;
+    height: 100px;
+    padding: 50px 0;
+
+    h5 {
+        text-align: center;
+        font-weight: $minimal_weight;
+        letter-spacing: 2.5px;
+        color: $grayish_blue;
+    }
+}
+
+.container-testimonial {    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    padding: 50px 40px;
+}
+
+.testimonial-card {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 70px;
+        height: 70px;
+        border: none;
+        border-radius: 40px;
+    }
+
+    p, a {
+        text-align: center;
+    }
+
+    p {
+        color: $vdg_blue;
+        margin: 5px 0;
+        text-align: justify;
+    }
+
+}
+
+.box-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-name {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+
+    h6 {
+        text-align: center;
+        font-weight: $max_height;
+        color: $vdd_blue;
+        margin-bottom: 5px;
+    }
+}

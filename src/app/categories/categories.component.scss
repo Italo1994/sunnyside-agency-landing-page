@@ -22,6 +22,7 @@ $rpt_row_2: repeat(2, 1fr);
     }
 }
 
+/* ==== The last two images of the SECTION Categories ==== */
 .design-category {
     background-image: url("../../assets/images/desktop/image-graphic-design.jpg");
     background-size: 100% 100%;
@@ -43,6 +44,8 @@ $rpt_row_2: repeat(2, 1fr);
         color: $dark_blue !important;
     }
 }
+
+/* End of the last two images */
 
 .special-text {
     margin-top: 320px;
