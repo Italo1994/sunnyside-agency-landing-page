@@ -53,7 +53,6 @@ $default_width: 1100px;
         margin: 5px 0;
         text-align: justify;
     }
-
 }
 
 .box-image {
@@ -69,10 +68,23 @@ $default_width: 1100px;
     align-items: center;
     padding-top: 25px;
 
-    h6 {
+    h4 {
         text-align: center;
         font-weight: $max_height;
         color: $vdd_blue;
         margin-bottom: 5px;
+    }
+}
+
+/* ==== RESPONSIVE LAYOUT ==== */
+@media screen and (max-width: 600px) {
+    .container-testimonial {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .testimonial-card {
+        margin-bottom: 40px;
     }
 }

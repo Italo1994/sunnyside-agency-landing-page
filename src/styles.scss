@@ -21,6 +21,7 @@ $dark_desaturated_cyan: hsl(167, 40%, 24%); // graphic desing text
 $dark_blue: hsl(198, 62%, 26%); // photography text
 $dark_moderate_cyan: hsl(168, 34%, 41%); // footer
 $main_bg_color: #3CBEFC;
+$bg_light_blue: #90D3C8;
 
 /* ===== NEUTRAL ===== */
 $vdd_blue: hsl(212, 27%, 19%); // very dark dasaturated blue
@@ -46,6 +47,12 @@ $min_height: 500px;
 
 $max_width: 100%;
 
+/* ==== COLUMNS AND ROWS ==== */
+$rpt_col_2: repeat(2, 1fr);
+$rpt_row_2: repeat(2, 1fr);
+$rpt_col_1: 1fr;
+$rpt_row_3: repeat(3, 1fr);
+
 body {
     font-size: 18px;
     //font-family: 'Fraunces', serif; //700, 900
@@ -54,4 +61,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fraunces', serif;
+}
+
+.brand {
+    text-decoration: none;
+    color: $white;
+    font-weight: 800;
+    font-size: 34px;
 }

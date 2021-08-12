@@ -42,13 +42,6 @@ header {
     align-items: center;
 }
 
-.brand {
-    text-decoration: none;
-    color: $white;
-    font-weight: 800;
-    font-size: 34px;
-}
-
 .menu-nav {
     display: flex;
     justify-content: flex-end;
@@ -86,4 +79,45 @@ header {
     background-color: #000;
     color: $white;
     transition: all 1s;
+}
+
+#text-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#arrow {
+    width: 30px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+}
+
+/* ==== RESPONSIVE LAYOUT ==== */
+.icon-hamburger {
+    width: 30px;
+    height: 30px;
+    background: url("../../assets/images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .icon-hamburger {
+        display: inline-block;
+    }
+
+    .menu-nav {
+        display: none;
+    }
+
+    .area-icon {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }

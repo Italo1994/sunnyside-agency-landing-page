@@ -1,11 +1,12 @@
 @import "../../styles.scss";
 
-$rpt_col_2: repeat(2, 1fr);
-$rpt_row_2: repeat(2, 1fr);
-
 .categories {
     display: grid;
-    grid-template-columns: $rpt_col_2;
+    grid-template-columns: $rpt_col_1;
+}
+
+.responsive-flex-reverse {
+    display: none;
 }
 
 .item-category {
@@ -84,4 +85,27 @@ $rpt_row_2: repeat(2, 1fr);
 
 .space {
     padding-bottom: 20px;
+}
+
+.container-image {
+    display: grid;
+    grid-template-columns: $rpt_col_2;
+}
+
+/* ==== RESPONSIVE LAYOUT ==== */
+@media screen and (max-width: 600px) {
+    .categories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container-image {
+        display: flex;
+        flex-direction: column;
+    }
 }
